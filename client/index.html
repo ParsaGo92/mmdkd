@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="font-theme-pixelated">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/mint.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <meta name="color-scheme" content="dark" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Montserrat:wght@400;500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:author" content="mania" />
+    <meta property="og:image" content="/mint.gif" />
+    
+    <!-- Meta Description -->
+    <meta name="description" content="mania — 17-year-old who loves horse riding and music" />
+    <meta name="keywords" content="mania, horse riding, music, teenage life" />
+    
+    <!-- Font Theme Script -->
+    <script>
+      ;(function () {
+        try {
+          var k = 'font-theme-';
+          var t = localStorage.getItem('font-theme');
+          var d = document.documentElement;
+          d.className = d.className.replace(/font-theme-\w+/g, '');
+          d.classList.add(k + (t && ['pixelated', 'monospace', 'inter', 'comic'].includes(t) ? t : 'pixelated'));
+        } catch (e) {
+          document.documentElement.classList.add('font-theme-pixelated');
+        }
+      })()
+    </script>
+    
+    <title>مانیا🦄</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
